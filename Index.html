@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create & Beyond – Gaming Community & Projekte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            yellow: '#fbc249',
+                            yellowDark: '#e0aa37',
+                            dark: '#0f1115',
+                            card: '#161922',
+                            border: '#2a2f3d',
+                            blue: '#73bdd5'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style> body { font-family: 'Plus Jakarta Sans', sans-serif; } </style>
+</head>
+<body class="bg-brand-dark text-gray-100 min-h-screen selection:bg-brand-yellow selection:text-brand-dark flex flex-col justify-between">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/85 backdrop-blur-md border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-xl sm:text-2xl font-extrabold tracking-tight text-white flex items-center gap-2">
+                <span>Create <span class="text-brand-yellow">&</span> Beyond</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+                <a href="index.html" class="text-brand-yellow transition-colors">Home</a>
+                <a href="projekte.html" class="text-gray-300 hover:text-brand-yellow transition-colors">Projekte</a>
+                <a href="create-attack-7.html" class="text-gray-300 hover:text-brand-yellow transition-colors">Create Attack 7</a>
+                <a href="downloads.html" class="text-gray-300 hover:text-brand-yellow transition-colors">Downloads</a>
+                <a href="team.html" class="text-gray-300 hover:text-brand-yellow transition-colors">Team</a>
+                <a href="beutelbot.html" class="text-gray-300 hover:text-brand-yellow transition-colors">BeutelBot</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="https://discord.gg/qYP7YB7Puv" target="_blank" class="bg-brand-yellow hover:bg-brand-yellowDark text-brand-dark font-bold px-5 py-2.5 rounded-xl transition-all shadow-lg shadow-brand-yellow/10 flex items-center gap-2 text-sm">
+                    <i class="fa-brands fa-discord text-lg"></i> Discord
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-card border-b border-brand-border px-6 py-4 space-y-3">
+            <a href="index.html" class="block text-brand-yellow font-medium">Home</a>
+            <a href="projekte.html" class="block text-gray-300 hover:text-brand-yellow font-medium">Projekte</a>
+            <a href="create-attack-7.html" class="block text-gray-300 hover:text-brand-yellow font-medium">Create Attack 7</a>
+            <a href="downloads.html" class="block text-gray-300 hover:text-brand-yellow font-medium">Downloads</a>
+            <a href="team.html" class="block text-gray-300 hover:text-brand-yellow font-medium">Team</a>
+            <a href="beutelbot.html" class="block text-gray-300 hover:text-brand-yellow font-medium">BeutelBot</a>
+            <div class="pt-2">
+                <a href="https://discord.gg/qYP7YB7Puv" target="_blank" class="w-full bg-brand-yellow text-brand-dark font-bold px-4 py-2.5 rounded-xl flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-discord"></i> Discord Beitreten
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section id="home" class="relative pt-32 pb-20 lg:pt-44 lg:pb-32 overflow-hidden border-b border-brand-border">
+            <div class="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#fbc249_1px,transparent_1px)] [background-size:24px_24px]"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow text-xs font-semibold uppercase tracking-wider">
+                            <span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse"></span> Offizielle Community & Events
+                        </div>
+                        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                            WILLKOMMEN AUF <span class="text-brand-yellow">CREATE & BEYOND</span>
+                        </h1>
+                        <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
+                            Das Zuhause unserer Projekte und Events. Während auf unserem Discord meist alles live und spontan abgeht, findest du hier die gebündelten Infos zu allem, was wir tun.
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <a href="https://discord.gg/qYP7YB7Puv" target="_blank" class="bg-brand-yellow hover:bg-brand-yellowDark text-brand-dark font-bold px-6 py-3.5 rounded-xl transition-all shadow-lg shadow-brand-yellow/20 flex items-center gap-3">
+                                <i class="fa-brands fa-discord text-xl"></i> Unsere Discord Community
+                            </a>
+                            <a href="create-attack-7.html" class="bg-brand-card hover:bg-brand-border border border-brand-border text-white font-semibold px-6 py-3.5 rounded-xl transition-all">
+                                Create Attack 7 ansehen
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-brand-yellow to-brand-blue opacity-30 blur-lg"></div>
+                        <div class="relative bg-brand-card border border-brand-border rounded-2xl p-6 shadow-2xl overflow-hidden">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-xs font-bold uppercase tracking-wider text-brand-yellow bg-brand-yellow/10 px-2.5 py-1 rounded-md">Highlight</span>
+                                <span class="text-xs text-brand-blue font-medium">Coming 2026</span>
+                            </div>
+                            <img src="https://primary.jwwb.nl/public/t/b/p/temp-ypdwmgttuxwqoptbsrxu/6-standard.png?enable-io=true&fit=bounds&width=1200" alt="Create Attack 7" class="rounded-xl w-full h-64 object-cover mb-4 border border-brand-border">
+                            <h3 class="text-xl font-bold text-white mb-1">Create Attack <span class="text-brand-yellow">7</span></h3>
+                            <p class="text-gray-400 text-sm">Die nächste große Staffel steht bevor. Mach dich bereit für neue Tech-Abenteuer und epische Projekte.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Was wir bieten -->
+        <section class="py-20 bg-brand-card/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl font-extrabold text-white mb-4">Was dich bei uns <span class="text-brand-yellow">erwartet</span></h2>
+                    <div class="w-16 h-1 bg-brand-yellow mx-auto rounded-full mb-6"></div>
+                    <p class="text-gray-300">Egal, ob du schon Teil unserer Community bist oder neu bei uns vorbeischaust – hier findest du alles, was du wissen musst.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <a href="projekte.html" class="bg-brand-card border border-brand-border rounded-2xl p-8 hover:border-brand-yellow/50 transition-all block group">
+                        <div class="w-12 h-12 rounded-xl bg-brand-yellow/10 flex items-center justify-center text-brand-yellow text-xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Laufende Projekte</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Verfolge unsere aktuellen Server, gemeinsamen Bauwerke und technologischen Meilensteine in Minecraft.</p>
+                    </a>
+                    <a href="create-attack-7.html" class="bg-brand-card border border-brand-border rounded-2xl p-8 hover:border-brand-yellow/50 transition-all block group">
+                        <div class="w-12 h-12 rounded-xl bg-brand-yellow/10 flex items-center justify-center text-brand-yellow text-xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Create Attack</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Alle Infos, Regeln und Details zu unserem großen Jahres-Event, das die Community jedes Jahr aufs Neue fesselt.</p>
+                    </a>
+                    <a href="downloads.html" class="bg-brand-card border border-brand-border rounded-2xl p-8 hover:border-brand-yellow/50 transition-all block group">
+                        <div class="w-12 h-12 rounded-xl bg-brand-yellow/10 flex items-center justify-center text-brand-yellow text-xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Map-Downloads</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Lade dir die Welten vergangener Staffeln sowie anderer Community-Projekte herunter und erkunde sie selbst.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- News / Announcements -->
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-white mb-2">Neuigkeiten von <span class="text-brand-yellow">C&B</span></h2>
+                        <p class="text-gray-400">Bleibe auf dem Laufenden über Ankündigungen und Events.</p>
+                    </div>
+                </div>
+                <div class="bg-brand-card border border-brand-border rounded-2xl overflow-hidden shadow-xl max-w-4xl mx-auto">
+                    <img src="https://primary.jwwb.nl/public/t/b/p/temp-ypdwmgttuxwqoptbsrxu/create-attack-twitter-post-standard_S7CB.webp" alt="Announcement" class="w-full h-72 sm:h-96 object-cover border-b border-brand-border">
+                    <div class="p-8">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-brand-yellow/10 text-brand-yellow border border-brand-yellow/30 text-xs font-bold px-3 py-1 rounded-full uppercase">Announcement</span>
+                            <span class="text-gray-400 text-xs">Aktuelles Update</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Zurzeit gibt es keine neuen Projektankündigungen. 🚧✨</h3>
+                        <p class="text-gray-300 text-sm">Schau gerne auf unserem Discord vorbei, um keine spontanen Aktionen oder Neuigkeiten zu verpassen!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-card border-t border-brand-border py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left">
+                <span class="text-lg font-bold text-white">Create <span class="text-brand-yellow">&</span> Beyond</span>
+                <p class="text-gray-400 text-sm mt-1">© 2021 - 2026 Create and Beyond. Alle Rechte vorbehalten.</p>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="https://discord.gg/qYP7YB7Puv" target="_blank" class="text-gray-400 hover:text-brand-yellow text-xl transition-colors"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    </script>
+</body>
+</html>
